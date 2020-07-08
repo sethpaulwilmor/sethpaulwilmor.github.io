@@ -1,1 +1,2 @@
-# sethpaulwilmor.github.io
+# sethpaulwilmor
+Personal &amp; Professional Site
