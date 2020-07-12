@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Seth Paul Wilmor</title>
-    
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -21,17 +21,55 @@
     <style>
       header {
         padding: 2rem;
+        background-color: #0e1a40;
       }
-
+      
+      a {
+        color: inherit;
+      }
+      
+      a:hover {
+        color: #946b2d;
+      }
+      
       h1 {
-        color: aliceblue;
+        color: #946b2d;
         text-emphasis: none;
         text-decoration: none;
         text-decoration-style: none;
       }
-      
+
+      #navbar {
+        background-color: #0e1a40;
+      }
+
+      .nav-link {
+        color: #946b2d;
+        margin-left: 1rem;
+      }
+
+      body {
+        background-color: #F0E6D5;
+      }
+
+      .card {
+        background-color: #222f5b;
+      }
+
+      .card-text {
+        color: #5d5d5d;
+      }
+
       h2 {
         margin-top: 2rem;
+      }
+
+      h5 {
+        color: #946b2d;
+      }
+
+      h6 {
+        color: #946b2d;
       }
 
       .card-columns {
@@ -39,29 +77,51 @@
         margin-bottom: 1rem;
       }
 
+      #bio {
+        flex-wrap: wrap;
+      }
+
+      #bioText {
+        margin-top: 0.5rem;
+      }
+
+      #aboutHeading {
+        padding: 1rem;
+      }
+
+      @media (min-width: 543px) {
+        #photo {
+          max-height: 300px;
+        }
+      }
+
+      @media (min-width: 700px) {
+        #photo {
+          max-height: 500px;
+        }
+      }
+
       footer {
+        background-color: #0e1a40;
         padding: 2rem;
+      }
+
+      /* #order {
+margin-top: 1rem;
+} */
+
+      .row {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem
       }
 
       .container {
         padding-bottom: 0.5rem;
       }
 
-      iframe {
-        margin-top: 2rem;
-      }
-
-      ul {
-        display: flex;
-      }
-      
-      #previous {
-          position: absolute;
-          left: 0%;
-      }
-
-      #next {
-          
+      #skillsHeading {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
             /* Remove Text-Selection */
@@ -75,34 +135,39 @@
   font-family: "Garamond";
   font-size: 24px;
 }
-
-
-
     </style>
-
   </head>
 
-    <body>
-      <header class="bg-secondary">
-        <h1><a href="/home/" class="text-decoration-none text-white">Seth Paul Wilmor</a></h1>
-      </header>  
-      
+  <body>
+    <header> 
+      <h1>
+        <a href="/" target="_blank" class="text-decoration-none">Seth Paul Wilmor</a>
+      </h1>
+    </header>
 
-      <!-- Nav Bar -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Creative</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Nav Bar -->    
+
+    <div class="pos-f-t">
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div id="navbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../weird/">Weird</a>
+              <a class="nav-link" href="/creative/" target="_blank">Creative</a>
+              <a class="nav-link" href="/professional/" target="_blank">Professional</a>
+              <a class="nav-link" href="/contact/" target="_blank">Contact</a>
             </li>
           </ul>
         </div>
+      </div>
+
+      <nav class="navbar navbar-dark" id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </nav>
+
+    </div>
 
 
       <main>
@@ -150,9 +215,9 @@
 
 
       <footer class="bg-secondary">
-          <h6><a href="../home/" class="text-decoration-none text-white">Contact me</a></h6>
+        <h6><a href="/contact/" target="_blank" class="text-decoration-none text-white">Contact me</a></h6>
 
-      </footer>
+    </footer>
 
 
 
