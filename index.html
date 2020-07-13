@@ -49,7 +49,7 @@
       }
 
       body {
-        background-color: #5d5d5d;
+        background-color: #0e1a40;
       }
 
       .card {
@@ -92,26 +92,10 @@
         padding: 1rem;
       }
 
-      @media (min-width: 543px) {
-        #photo {
-          max-height: 300px;
-        }
-      }
-
-      @media (min-width: 700px) {
-        #photo {
-          max-height: 500px;
-        }
-      }
-
       footer {
         background-color: #0e1a40;
         padding: 2rem;
       }
-
-      /* #order {
-margin-top: 1rem;
-} */
 
       .row {
         margin-top: 0.5rem;
@@ -136,7 +120,7 @@ margin-top: 1rem;
   <body>
     <header> 
       <h1>
-        <a href="#" class="text-decoration-none">Seth Paul Wilmor</a>
+        <a href="/" class="text-decoration-none">Seth Paul Wilmor</a>
       </h1>
     </header>
 
@@ -148,9 +132,9 @@ margin-top: 1rem;
         <div id="navbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../creative/" target="_blank">Creative</a>
-              <a class="nav-link" href="../professional/" target="_blank">Professional</a>
-              <a class="nav-link" href="../contact/" target="_blank">Contact</a>
+              <a class="nav-link" href="../creative/">Creative</a>
+              <a class="nav-link" href="../professional/">Professional</a>
+              <a class="nav-link" href="../contact/">Contact</a>
             </li>
           </ul>
         </div>
@@ -172,7 +156,8 @@ margin-top: 1rem;
         <div class="col mb-4">
           <div class="card">
             <a href="../creative/">
-              <img src="../img/creative.jpg" class="card-img-top" alt="Creative">
+              <img src="../img/creative.jpg" class="img-fluid" alt="Responsive image">
+              <!-- class="card-img-top" alt="Creative" -->
             </a>
             <div class="card-body">
               <h5 class="card-title">
@@ -186,7 +171,7 @@ margin-top: 1rem;
         <div class="col mb-4">
           <div class="card">
             <a href="../professional/">
-              <img src="../img/professional.jpg" class="card-img-top" alt="...">
+              <img src="../img/professional.jpg" class="img-fluid" alt="Responsive image">
             </a>
               <div class="card-body">
               <h5 class="card-title">
@@ -203,12 +188,14 @@ margin-top: 1rem;
 
     <footer>
       <h6>
-        <a href="../contact/" target="_blank" class="text-decoration-none"
+        <a href="../contact/" class="text-decoration-none"
           >Contact me</a
         >
       </h6>
     </footer>
 
+
+    
     <!-- Bootstrap JavaScript -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
